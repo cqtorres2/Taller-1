@@ -1,7 +1,7 @@
 public class Libro {
-    String autor = "howard phillip lovecraft";
-    String titulo = "las montañas de la locura";
-    int numeroPaginas = 152;
+    String autor;
+    String titulo;
+    int numeroPaginas;
 
     public Libro() {
         String autor;
@@ -10,9 +10,15 @@ public class Libro {
     }
 
     public Libro(String autor, String titulo, int numeroPaginas) {
-        this.autor = "howard phillip lovecraft";
-        this.titulo = "las montañas de la locura";
-        this.numeroPaginas = 152;
+        this.autor = autor;
+        this.titulo = titulo;
+        this.numeroPaginas = numeroPaginas;
+    }
+
+    @Override
+    public String toString() {
+        return "Los detalles del libro son: " + titulo + " el nombre del autor es " + autor
+                + " y el numero de paginas son " + numeroPaginas;
     }
 
     public static void main(String[] args) {

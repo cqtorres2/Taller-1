@@ -1,20 +1,27 @@
 public class CuentaBancaria {
-    int numeroCuenta;
-    double saldo;
-    Boolean tipoCuenta;
- public CuentaBancaria(){
-    int numeroCuenta;
-    double saldo;
-    //Boolean es para persona juridica o persona natural //
-    boolean tipoCuenta;
- }
- public CuentaBancaria(int numeroCuenta, boolean tipoCuenta){
-    this.tipoCuenta = tipoCuenta;
-    this.numeroCuenta = numeroCuenta;
- }
- public CuentaBancaria(int numeroCuenta, boolean tipoCuenta, double saldo){
-    this.tipoCuenta = true;
-    this.numeroCuenta = 34123;
-    this.saldo = 45;
- }
+   int numeroCuenta;
+   double saldo;
+   String tipoCuenta;
+
+   public CuentaBancaria() {
+      int numeroCuenta;
+      double saldo;
+      String tipoCuenta;
+   }
+   public CuentaBancaria(int numeroCuenta, String tipoCuenta) {
+      this.tipoCuenta = tipoCuenta;
+      this.numeroCuenta = numeroCuenta;
+   }
+
+   public CuentaBancaria(int numeroCuenta, String tipoCuenta, double saldo) {
+      this.tipoCuenta = tipoCuenta;
+      this.numeroCuenta = numeroCuenta;
+      this.saldo = saldo;
+   }
+
+   @Override
+   public String toString() {
+      return "El numero de cuenta es " + numeroCuenta + " Dispone de un saldo inicial de " + saldo
+            + " Dolares y es una cuenta de tipo " + tipoCuenta;
+   }
 }

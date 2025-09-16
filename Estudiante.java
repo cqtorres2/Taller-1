@@ -16,6 +16,10 @@ public class Estudiante {
 
     public Estudiante(String nombre, int Edad, int curso) {
         this(nombre, Edad);
-        this.curso = 7;
+        this.curso = curso;
+    }
+    @Override
+    public String toString() {
+        return "El nombre del estudiante es " + nombre + " tiene " + Edad + " años y asiste a " + curso + " grado";
     }
 }

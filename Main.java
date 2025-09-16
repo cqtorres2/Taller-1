@@ -1,21 +1,12 @@
-import java.io.File;
 
 public class Main {
-    File file = new File("Estudiante.java");
-    File file2 = new File("Libro.java");
-    File file3 = new File("CuentaBancaria.java");
-    String editorial;
-    int carnet;
-    String nombreBanco;
+    public static void main(String[] args) {
+        Libro li1 = new Libro("HP lovecraft", "Cuentos de la cima", 34);
+        Estudiante es1 = new Estudiante("josh", 15, 6);
+        CuentaBancaria cu1 = new CuentaBancaria(43123, "Juridica", 45);
 
-    public Main(String editorial, int carnet, String nombreBanco) {
-        this.editorial = "Austral";
-        this.carnet = 10334;
-        this.nombreBanco = "Bancolombia";
-    }
-    @Override
-    public String toString() {
-        // TODO Auto-generated method stub
-        return super.toString();
+        System.out.println(cu1);
+        System.out.println(li1);
+        System.out.println(es1);
     }
 }
